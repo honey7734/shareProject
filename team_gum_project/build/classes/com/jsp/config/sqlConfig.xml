@@ -8,17 +8,6 @@
 	
 					
 	<typeAliases>
-		<typeAlias type="java.lang.String" alias="str" />
-		<typeAlias type="java.lang.Integer" alias="int" />
-		
-		<typeAlias type="com.jsp.dto.MemberVO"  alias="member"/>	
-		<typeAlias type="com.jsp.dto.MenuVO" alias="menu" />
-		<typeAlias type="com.jsp.dto.NoticeVO" alias="notice" />
-		<typeAlias type="com.jsp.dto.BoardVO" alias="board" />
-		<typeAlias type="com.jsp.dto.ReplyVO" alias="reply" />
-		<typeAlias type="com.jsp.dto.PdsVO" alias="pds" />
-		<typeAlias type="com.jsp.dto.AttachVO" alias="attach" />
-		
 	</typeAliases>
 	
 	<environments default="development">
@@ -38,13 +27,6 @@
 	</environments>
 	
 	<mappers>
-		<mapper resource="com/jsp/mybatis/mappers/Member-Mapper.xml"/>
-		<mapper resource="com/jsp/mybatis/mappers/Menu-Mapper.xml"/>
-		<mapper resource="com/jsp/mybatis/mappers/Notice-Mapper.xml"/>
-		<mapper resource="com/jsp/mybatis/mappers/Board-Mapper.xml"/>
-		<mapper resource="com/jsp/mybatis/mappers/Reply-Mapper.xml"/>
-		<mapper resource="com/jsp/mybatis/mappers/Pds-Mapper.xml"/>
-		<mapper resource="com/jsp/mybatis/mappers/Attach-Mapper.xml"/>
 	</mappers>
 	
 </configuration>
