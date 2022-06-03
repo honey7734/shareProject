@@ -1,0 +1,28 @@
+package com.jsp.controller;
+
+import java.io.PrintWriter;
+
+import javax.servlet.http.HttpServletResponse;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class JSONResolver {
+	
+
+	public static void view(HttpServletResponse response, Object target) 
+														throws Exception {
+
+		// Ï∂úÎ†•
+		ObjectMapper mapper = new ObjectMapper();
+
+		// content Type Í≤∞Ï†ï
+		response.setContentType("application/json;charset=utf-8");
+		PrintWriter out = response.getWriter();
+
+		// ?Ç¥Î≥¥ÎÇ¥Í∏?
+		out.println(mapper.writeValueAsString(target));
+
+		// out Í∞ùÏ≤¥Î•? Ï¢ÖÎ£å?ïòÍ≥? ?ôò?õê.
+		out.close();
+	}
+}
